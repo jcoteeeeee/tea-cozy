@@ -1,3 +1,32 @@
-#test{
-    color: blue; 
-}
+*{
+    font-family: Helvetica; 
+    font-size: 22px; 
+    color: seashell; 
+    background-color: black; 
+    opacity: 0.9;   
+} 
+
+#header{
+    height: 69px; 
+    /* position: fixed;  when I do this, it makes the border not as long */ 
+    border-bottom: 1px solid seashell; 
+    /* position: fixed;  */ 
+    display: flex; 
+    justify-content: space-between; /* creates space between div tag with id logo and nav tag with id nav-bar*/  
+    align-items: center;   
+} 
+
+#logo img{ 
+    height: 50px; 
+    position: relative; 
+    left: 10px; 
+} 
+
+#nav-bar{ 
+    /* position: relative;   */
+    /* right: 200px;   */ 
+    width: 400px;
+    display: flex; 
+    justify-content: space-around;  
+    /* border: 1px solid red;   */
+}   
