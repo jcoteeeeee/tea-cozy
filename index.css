@@ -1,6 +1,5 @@
 *{
     font-family: Helvetica; 
-    font-size: 22px; 
     color: seashell; 
     background-color: black; 
     opacity: 0.9;   
@@ -8,9 +7,11 @@
 
 #header{
     height: 69px; 
-    /* position: fixed;  when I do this, it makes the border not as long */ 
+    font-size: 22px; 
+    /* position: fixed;  */
+    /* when I do this, it makes the border not as long */ 
+    /* z-index: 1  */
     border-bottom: 1px solid seashell; 
-    /* position: fixed;  */ 
     display: flex; 
     justify-content: space-between; /* creates space between div tag with id logo and nav tag with id nav-bar*/  
     align-items: center;   
@@ -28,5 +29,28 @@
     width: 400px;
     display: flex; 
     justify-content: space-around;  
-    /* border: 1px solid red;   */
+    /* border: 1px solid red;   */ 
+    /* make sure to ask question of positioning of this */  
 }   
+
+#mission{ 
+    height: 700px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    /* when you do justify-content: center and #mission img has width 100%, it doesn't move it. If it has no specified width, it gets centered. 
+    Interestingly, if it has a width value such as 200px, it also gets centered. */ 
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
+    margin: 40px; 
+
+}
+
+#mission-descrip{
+    position: relative;  
+    height: 10%; 
+    width: 100%; 
+    text-align: center; 
+}
