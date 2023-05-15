@@ -5,6 +5,7 @@
     opacity: 0.9;   
 } 
 
+/* Header */
 #header{
     height: 69px; 
     font-size: 22px; 
@@ -33,6 +34,7 @@
     /* make sure to ask question of positioning of this */  
 }   
 
+/* Mission */
 #mission{ 
     height: 700px; 
     display: flex; 
@@ -53,4 +55,34 @@
     height: 10%; 
     width: 100%; 
     text-align: center; 
+}  
+
+/* Tea of the month */  
+#tea-month{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+#tea-head{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+#tea-imgs{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}  
+
+.tea-card{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+}
+.tea-img{
+    height: 200px; 
+    width: 300px; 
+    margin-bottom: 10px; 
 }
