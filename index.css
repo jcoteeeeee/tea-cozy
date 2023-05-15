@@ -85,4 +85,29 @@
     height: 200px; 
     width: 300px; 
     margin-bottom: 10px; 
+} 
+
+/* locations */ 
+#locations{ 
+    height: 500px; 
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg'); 
+    background-size: cover; 
+    /* display: flex;  */
+    /* flex-direction: column;   */
+} 
+
+#location-head{
+    display: flex; 
+    margin-bottom: 15px; 
+}
+
+.location-card{
+    height: 300px; 
+    width: 300px; 
+    opacity: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  
+    margin-right: 40px; 
 }
