@@ -1,38 +1,50 @@
 *{
     font-family: Helvetica; 
     color: seashell; 
-    background-color: black; 
-    opacity: 0.9;   
 } 
+
+body{
+    background-color: black; 
+}
 
 /* Header */
 #header{
     height: 69px; 
     font-size: 22px; 
-    /* position: fixed;  */
-    /* when I do this, it makes the border not as long */ 
-    /* z-index: 1  */
+    position: fixed; 
+    width: 100%; 
+    z-index: 1; 
+    top: 0; 
+    /* now header doesn't stay attached to top */
     border-bottom: 1px solid seashell; 
     display: flex; 
     justify-content: space-between; /* creates space between div tag with id logo and nav tag with id nav-bar*/  
     align-items: center;   
+    background-color: black; 
 } 
 
 #logo img{ 
     height: 50px; 
     position: relative; 
     left: 10px; 
+    opacity: 0.9; 
 } 
 
 #nav-bar{ 
     /* position: relative;   */
     /* right: 200px;   */ 
-    width: 400px;
+    width: 40%;  
     display: flex; 
     justify-content: space-around;  
-    /* border: 1px solid red;   */ 
+
     /* make sure to ask question of positioning of this */  
+
 }   
+
+/* #nav-bar a{
+    margin-right: 25px; 
+    this is a better option if you're not using display: flex (for nav bar element spacing issue) 
+}  */
 
 /* Mission */
 #mission{ 
@@ -45,16 +57,17 @@
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg'); 
     background-size: cover; 
     background-position: center; 
-    z-index: 1; 
     margin: 40px; 
-
+    background-color: black; 
+    position: relative; 
+    margin-top: 69px; 
 }
 
 #mission-descrip{
     position: relative;  
-    height: 10%; 
     width: 100%; 
     text-align: center; 
+    background-color: black; 
 }  
 
 /* Tea of the month */  
@@ -105,6 +118,7 @@
 #location-cards{
     display: flex; 
 }
+
 .location-card{
     height: 300px; 
     width: 300px; 
@@ -114,8 +128,15 @@
     align-items: center; 
     justify-content: center;  
     margin-right: 40px;  
-    border: 1px solid red; 
+    flex-shrink: 1; 
+    flex-grow: 1; 
+    background-color: black; 
 }  
+
+#location-downtown{
+    margin-left: 40px; 
+    /* so the first card has a 40px margin on the left to equal the third card's 40px right margin */
+} 
 
 /* footer */       
 #info{ 
@@ -129,3 +150,9 @@
     margin-left: 20px; 
     text-align: left; 
 }  
+
+@media (max-width: 1000px){
+    .location-card{
+        width: 30%; 
+    }
+} 
