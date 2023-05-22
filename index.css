@@ -61,7 +61,7 @@ body{
     background-color: black; 
     position: relative; 
     margin-top: 69px; 
-}
+} 
 
 #mission-descrip{
     position: relative;  
@@ -155,4 +155,4 @@ body{
     .location-card{
         width: 30%; 
     }
-} 
+}     
